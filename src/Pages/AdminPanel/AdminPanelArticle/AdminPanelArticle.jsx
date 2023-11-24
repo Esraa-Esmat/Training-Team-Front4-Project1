@@ -79,7 +79,7 @@ const AdminPanelArticle = () => {
                             </div>
 
                             <div className="col-6 col-lg-1 d-flex align-items-center gap-2 text_primary">
-                                <Link className="text_primary clickable active-scale" to={`${article?._id}`}>
+                                <Link className="text_primary clickable active-scale" to='/adminpanel/adminupdatearticle'>
                                     <i className="fa-regular fa-pen-to-square fa-xl" />
                                 </Link>
 

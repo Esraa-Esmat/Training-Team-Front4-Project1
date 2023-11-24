@@ -33,7 +33,7 @@ function SideBarAdmin() {
 					<div key={i}>
 						<Link
 							className="d-block bg-black bg-opacity-25 rounded fw-bold py-3 px-4"
-							// to={section.link || '#'}
+							// to='/adminpanel'
 							onClick={() => handleSelectTitle(section.title)}
 						>
 							{section.title}
