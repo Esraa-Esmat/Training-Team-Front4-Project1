@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { FaCloudUploadAlt } from 'react-icons/fa';
+import { successMsg } from '../../../Toast/Toast';
 
 const AdminCreateJobForm = () => {
 
@@ -87,8 +88,7 @@ const AdminCreateJobForm = () => {
     jobData.append('jobDescription', jobDescription);
     jobData.append('jobRequirement', jobRequirement);
     jobData.append('skills', skills);
-    // dispatch(adminCreateNewJob(jobData));
-    // toast.success("hello")
+    successMsg("Added Successufliy")
   };
 
   return (

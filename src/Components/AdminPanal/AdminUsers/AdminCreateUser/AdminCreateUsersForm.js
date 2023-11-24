@@ -3,10 +3,10 @@ import Form from 'react-bootstrap/Form';
 import { Link, useNavigate } from "react-router-dom";
 import Footer from "../../../Global/Footer/Footer";
 import { useDispatch } from "react-redux";
+import { errorMsg } from "../../../Toast/Toast";
 
 const AdminCreateUsersForm = () => {
 
-    // all state variables
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
     const [status, setstatus] = useState('');
@@ -19,7 +19,6 @@ const AdminCreateUsersForm = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
   
-    // handle state changes
     const handlefirstName = (event) => {
       setfirstName(event.target.value);
     };
@@ -76,7 +75,7 @@ const AdminCreateUsersForm = () => {
         userData.append('confirmPassword', confirmPassword);
         console.log(userData);
       } else {
-        //alert("Passwords do not match");
+        errorMsg("Password Not Matching")
       }
     };
   return (
