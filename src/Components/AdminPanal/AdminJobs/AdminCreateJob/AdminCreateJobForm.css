@@ -1,0 +1,135 @@
+
+  .Header {
+    color: #fff;
+    position: relative;
+    padding-top: 20px;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+  .Header2 {
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .Header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #bf9b30;
+    top: calc(100% + 10px);
+  }
+  @media (max-width: 768px) {
+    /* .Side {
+      display: none;
+    } */
+  }
+  .FormSection {
+    margin-top: 28px;
+    position: relative;
+    color: #fff;
+  }
+  .FormSection .HeaderForm {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .FormSection .HeaderForm h5 {
+    color: #fff;
+    position: relative;
+    width: fit-content;
+  }
+  .FormSection .HeaderForm h5::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bf9b30;
+  }
+  .FormSection .HeaderForm button {
+    padding: 10px 35px;
+  }
+  .FormSection .HeaderForm button,
+  .FormSection .TwoButton button {
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #bf9b30;
+  }
+  .FormSection .HeaderForm button a,
+  .FormSection .TwoButton button a {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .FormSection .row {
+    margin-bottom: 24px;
+  }
+  .FormSection label {
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .FormSection input,
+  .FormSection select {
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #4a4a4ab7;
+    color: #fff;
+  }
+  .FormSection .TwoButton {
+    justify-content: right;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .FormSection .TwoButton button {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .FormSection .TwoButton .BtnOne {
+    background-color: #9d9c9c;
+  }
+  
+  .BtnUpload {
+    margin: 2px;
+    background-color: transparent;
+    border: #bf9b30 dashed 2px;
+    color: white;
+    padding: 1px 10px;
+  }
+  .BtnUpload .shape-upload {
+    color: #bf9b30;
+    font-size: 70px;
+  }
+  
+  .BtnUpload a {
+    color: #bf9b30;
+  }
+  
+  .BtnUpload p {
+    color: #9d9c9c;
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .radi {
+    align-items: center;
+    display: flex;
+  }
+  @media (max-width: 800px) {
+    .display {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) {
+    .JobType {
+      margin: 0;
+    }
+  }
+  

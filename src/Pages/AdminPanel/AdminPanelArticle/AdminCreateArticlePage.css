@@ -1,0 +1,231 @@
+
+/* ========================== Start Article Topic Text==============================================*/
+.article-create-text {
+  color: #d0d0d0;
+  font-size: 14px;
+  text-align: left;
+}
+.article-topic hr {
+  width: 70px;
+  height: 2px;
+  background-color: #d0d0d0;
+}
+/* ========================== End Article Topic Text==============================================*/
+/* ========================== Start Article Side-Panel=============================================*/
+.article-panel {
+  background-color: #0c0b0bd6;
+  height: max-content;
+  text-align: left;
+}
+.article-panel-topics {
+  background-color: #0c0b0be3;
+}
+/* ========================== End Article Side-Panel=============================================*/
+/* ========================== Start Article Form Topic Text=============================================*/
+.add-hr {
+  width: 70%;
+  height: 2px;
+  background-color: #bf9b30;
+}
+.publish-main-btn {
+  text-align: end;
+}
+.publish-main-btn button {
+  background-color: #bf9b30;
+  transition: 0.3s;
+}
+.publish-main-btn button:hover {
+  background-color: #d8b23f;
+}
+
+/* ========================== Start Form Style=============================================*/
+.title {
+  text-align: left;
+}
+
+.article-form {
+  text-align: left;
+}
+.content-input {
+  height: 200px;
+}
+.dark-inputs {
+  padding: 7px 0px;
+  width: 100%;
+  color: #fff;
+  background-color: #3d3939e0;
+  border: 1px solid #3d3939e0;
+}
+.form-select {
+  padding: 7px 0px;
+  width: 100%;
+  background-color: #3d3939e0;
+  border: 1px solid #3d3939e0;
+}
+form .form-select:focus {
+  color: #fff;
+  background-color: #3d3939e0;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #d8b23f;
+  border: none;
+}
+form .dark-inputs:focus {
+  color: #fff;
+  background-color: #3d3939e0;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem #d8b23f;
+  border: none;
+}
+.drag {
+  border: 3px dashed #d8b23f;
+  padding: 55px 0;
+  border-radius: 7px;
+  background-color: #1a1919;
+}
+.drag-text a {
+  color: #bf9b30;
+  text-decoration: none;
+}
+.formats {
+  color: #3d3939;
+}
+.drag-for-mobile {
+  display: none;
+}
+/*====================================================== Drag files ============================================*/
+.input-div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.icon {
+  color: #bf9b30;
+  font-size: 4rem;
+  cursor: pointer;
+  animation: iconflicker 2s linear infinite;
+}
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer !important;
+}
+/*====================================================== Drag files End============================================*/
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.save {
+  text-transform: uppercase;
+  padding: 9px 53px;
+  background-color: #bf9b30;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+
+.save:hover {
+  background-color: #d8b23f;
+}
+.cancel {
+  text-transform: uppercase;
+  padding: 3px 53px;
+  background-color: #d0d0d0;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  transition: 0.3s;
+}
+.cancel:hover {
+  background-color: #a7a4a4;
+}
+
+/*====================================================== Publish btn for mobile ============================================*/
+
+.publish-btn {
+  text-transform: uppercase;
+  padding: 9px 53px;
+  background-color: #bf9b30;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  transition: 0.3s;
+  margin-left: 20px;
+  display: none;
+}
+.publish-btn:hover {
+  background-color: #d8b23f;
+}
+
+/*====================================================== media Quries ============================================*/
+
+@media (max-width: 992px) {
+  .publish-btn {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .save {
+    display: none;
+  }
+  .cancel {
+    padding: 9px 53px;
+    width: 70%;
+  }
+  .article-panel {
+    display: none;
+  }
+  .drag-for-large-screens {
+    display: none;
+  }
+  .drag-for-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .publish-btn {
+    display: block;
+    width: 94%;
+    margin: 0px auto;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .save {
+    display: none;
+  }
+  .cancel {
+    padding: 9px 53px;
+    width: 94%;
+  }
+  .article-panel {
+    display: none;
+  }
+  .drag-for-large-screens {
+    display: none;
+  }
+  .drag-for-mobile {
+    display: block;
+  }
+}
