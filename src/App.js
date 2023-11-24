@@ -67,29 +67,29 @@ function App() {
 				{/* ------------------------- /Article  -----------------------------------------*/}
 
 				{/* ------------------------- Portals  -----------------------------------------*/}
-
+{}
 				{login && userRole === 'instructor' && <Route path="/instructor" element={<InstructorPortalPage />} />}
 				{login && userRole === 'student' && <Route path="/student" element={<StudentPortalPage />} />}
 
 				{login && userRole === 'admin' &&
 					<Route path="/adminpanel" element={<AdminPanel />} />}
 			
-				<Route path='/adminpanel/createnewuser' element={<AdminCreateUsers />} />
-				<Route path='/adminpanel/admincreatearticle' element={<AdminCreateArticle />} />
-				<Route path='/adminpanel/createnewjob' element={<AdminCreateJob />} />
-				<Route path='/adminpanel/createnewcourses' element={<AdminCreateCourses />} />
+				{login && <Route path='/adminpanel/createnewuser' element={<AdminCreateUsers />} />}
+				{login && <Route path='/adminpanel/admincreatearticle' element={<AdminCreateArticle />} />}
+				{login && <Route path='/adminpanel/createnewjob' element={<AdminCreateJob />} />}
+				{login && <Route path='/adminpanel/createnewcourses' element={<AdminCreateCourses />} />}
 
 
 				{/* ------------------------- /Portals  -----------------------------------------*/}
 
-				<Route path="/AllJobsPage" element={<AllJobsPage />}>
+				{login && <Route path="/AllJobsPage" element={<AllJobsPage />}>
 					<Route index element={<JobOffer/>}/>
 					<Route path='details' element={<JobDetails/>}/>
 					<Route path='apply' element={<JobApply/>}/>
-				</Route>
+				</Route>}
 				{/* ------------------------- create cv -----------------------------------------*/}
 
-				<Route path="/jobs/create-cv/" element={<MainCreateCV />}>
+				{login && <Route path="/jobs/create-cv/" element={<MainCreateCV />}>
 					{/* redirect to first route -------------------------------- */}
 					<Route
 						index
@@ -106,7 +106,7 @@ function App() {
 					<Route path="experience" element={<Experience4Form />} />
 					<Route path="education" element={<Education5Form />} />
 					<Route path="links" element={<Links8Form />} />
-				</Route>
+				</Route>}
 				{/* ------------------------- /create cv -----------------------------------------*/}
 
 			</Routes>

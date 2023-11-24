@@ -8,6 +8,7 @@ import { deleteJob, toggleJobStatus } from "../../../Redux/Reducers/AdminSlice";
 import { AdminJobData } from "../../../Components/AdminPanal/AdminJobs/AdminJobData";
 import { AdminSideBarData } from "../../../Components/AdminPanal/AdminGlobal/SideBar/AdminSideBarData";
 import AdminSectionsSearchBar from "../../../Components/AdminPanal/AdminGlobal/AdminSectionsSearchBar";
+import { infoMsg } from "../../../Components/Toast/Toast";
 
 function AdminPanelJobs() {
     const jobs = useSelector((state) => state.AdminSlice.jobs);
@@ -29,6 +30,7 @@ function AdminPanelJobs() {
 
     const handelDeleteJob = (index) => {
         dispatch(deleteJob(index));
+        infoMsg(`Item ${index} Is Deleted`)
     };
 
     const handleToggleStatus = (index) => {
