@@ -1,12 +1,10 @@
 import React from 'react';
-import './AdminCreateArticlePage.css';
-import HeaderTitle from '../../../Components/Global/HeaderTitle';
+import '../AdminCreateArticlePage.css';
 import { Link } from 'react-router-dom';
-import SideBarAdmin from '../../../Components/AdminPanal/AdminGlobal/SideBar/AdminSideBar';
-import TopBarAdmin from '../../../Components/AdminPanal/AdminGlobal/TopBarAdmin';
-import AdminCreateArticleForm from '../../../Components/AdminPanal/AdminArticle/AdminCreateArticle/AdminCreateArticleForm';
-import AdminEditeArticle from '../../../../Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
 import AdminEditeArticleForm from '../../../../Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
+import HeaderTitle from '../../../../Components/Global/HeaderTitle';
+import SideBarAdmin from '../../../../Components/AdminPanal/AdminGlobal/SideBar/AdminSideBar';
+import TopBarAdmin from '../../../../Components/AdminPanal/AdminGlobal/TopBarAdmin';
 
 export default function AdminEditArticle() {
   return (
