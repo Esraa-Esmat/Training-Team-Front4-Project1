@@ -6,6 +6,7 @@ import SideBarAdmin from '../../../Components/AdminPanal/AdminGlobal/SideBar/Adm
 import TopBarAdmin from '../../../Components/AdminPanal/AdminGlobal/TopBarAdmin';
 import AdminCreateArticleForm from '../../../Components/AdminPanal/AdminArticle/AdminCreateArticle/AdminCreateArticleForm';
 import AdminEditeArticle from '../../../../Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
+import AdminEditeArticleForm from '../../../../Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
 
 export default function AdminEditArticle() {
   return (

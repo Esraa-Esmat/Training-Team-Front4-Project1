@@ -28,7 +28,7 @@ import JobApply from './Components/Jobs/JobApply';
 import AdminCreateCourses from './Pages/AdminPanel/AdminPanelCourses/AdminCreateCourses/AdminCreateCourses';
 import AdminCreateJob from './Pages/AdminPanel/AdminPanelJob/AdminCreateJob/AdminCreateJob';
 import AdminCreateUsers from './Pages/AdminPanel/AdminPanelUsers/AdminCreateUsers/AdminCreateUsers';
-import AdminEditeArticle from './Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
+import AdminEditArticle from './Pages/AdminPanel/AdminPanelArticle/AdminEditArticle/AdminEditArticle';
 
 function App() {
 	const login = useSelector((state) => state.UserSlice.login);
@@ -82,7 +82,7 @@ function App() {
 
 
 				{login && <Route path='/adminpanel/createnewuser' element={<AdminCreateUsers />} />}
-				{login && <Route path='/adminpanel/adminupdatearticle' element={<AdminEditeArticle />} />}
+				{login && <Route path='/adminpanel/adminupdatearticle' element={<AdminEditArticle />} />}
 				{login && <Route path='/adminpanel/createnewjob' element={<AdminCreateJob />} />}
 				{login && <Route path='/adminpanel/createnewcourses' element={<AdminCreateCourses />} />}
 				{/* ------------------------- /Portals  -----------------------------------------*/}
