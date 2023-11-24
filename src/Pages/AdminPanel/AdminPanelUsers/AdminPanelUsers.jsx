@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteUser, toggleUserStatus } from '../../../Redux/Reducers/AdminSlice';
 import AdminSectionsSearchBar from '../../../Components/AdminPanal/AdminGlobal/AdminSectionsSearchBar';
+import { infoMsg } from '../../../Components/Toast/Toast';
 
 const AdminPanelUsers = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,10 @@ const AdminPanelUsers = () => {
 
   const handelDeleteUser = (index) => {
     dispatch(deleteUser(index));
+    infoMsg(`Item ${index} Is Deleted`)
+
   };
+
 
   const handleToggleStatus = (index) => {
     dispatch(toggleUserStatus({ index }));

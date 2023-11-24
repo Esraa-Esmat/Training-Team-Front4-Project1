@@ -1,16 +1,16 @@
 import React from 'react';
-import '../AdminCreateArticlePage.css';
+// import './AdminCreateArticlePage.css';
 import { Link } from 'react-router-dom';
-import AdminEditeArticleForm from '../../../../Components/AdminPanal/AdminArticle/AdminEditeArticle/AdminEditeArticleForm';
+import AdminCreateCoursesForm from '../../../../Components/AdminPanal/AdminCourses/AdminCreateCourses/AdminCreateCoursesForm';
 import HeaderTitle from '../../../../Components/Global/HeaderTitle';
 import SideBarAdmin from '../../../../Components/AdminPanal/AdminGlobal/SideBar/AdminSideBar';
 import TopBarAdmin from '../../../../Components/AdminPanal/AdminGlobal/TopBarAdmin';
 
-export default function AdminEditArticle() {
+export default function AdminCreateCourses() {
   return (
     <>
       <div className="container">
-        <HeaderTitle title={'UPpdate Article Details'} />
+        <HeaderTitle title={'Add Article Details'} />
       </div>
 
       <div className="container d-flex flex-column gap-4 my-4 mt-3">
@@ -33,7 +33,7 @@ export default function AdminEditArticle() {
           </div>
           <div className="col-12 col-xl-9">
             {/* {componentToRender} */}
-            <AdminEditeArticleForm />
+            <AdminCreateCoursesForm />
           </div>
         </div>
       </div>

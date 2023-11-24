@@ -6,6 +6,7 @@ import { LiaTrashAlt } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 import { deletecourse, toggleCourseStatus } from '../../../Redux/Reducers/AdminSlice';
 import { AdminSideBarData } from '../../../Components/AdminPanal/AdminGlobal/SideBar/AdminSideBarData';
+import { infoMsg } from '../../../Components/Toast/Toast';
 
 const AdminPanelCourses = () => {
   const selectedContent = useSelector((state) => state.AdminSlice.selectedContent);
@@ -39,6 +40,8 @@ const AdminPanelCourses = () => {
 
   const handelDeleteCourse = (index) => {
     dispatch(deletecourse(index));
+    infoMsg(`Item ${index} Is Deleted`)
+
   };
 
   const handleToggleStatus = (index) => {
